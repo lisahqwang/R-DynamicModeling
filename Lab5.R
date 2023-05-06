@@ -131,3 +131,9 @@ plot(seq(1,20), ratio, col = "red", type = "o", xlab = 'time in years', ylab = '
 lines(seq(1,20), ratio1, col = "blue", type = "o", xlab = 'time in years', ylab = 'N_t+1 / N_t', main = "Ratios")
 lines(seq(1,20), ratio2, col = "purple", type = "o", xlab = 'time in years', ylab = 'N_t+1 / N_t', main = "Ratios")
 legend(x = "topright", legend = c("Juvenile_ratio", "Adult_ratio", "Total_ratio"), col = c("red", "blue", "purple"), lty = 1)
+
+#I'm noticing that after initial fluctuations, the ratio curves for all 
+#Juvenile, Adult, and Total population ratio converge to 1. I would predict 
+#that this is an expected behavior for growth that is contingent upon 
+#the L matrix's values. The L matrix's first column tell us about the effect of
+#Juvenile to Juvenile, then Juvenile to adult, so on and so forth. 
